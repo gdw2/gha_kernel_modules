@@ -1,0 +1,10 @@
+name: find kernel modules
+on:
+  workflow_dispatch: {}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: See what kernel modules are available
+        run: lsmod
